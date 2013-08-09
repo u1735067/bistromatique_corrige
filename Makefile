@@ -1,4 +1,3 @@
-
 NAME		=		calc
 
 NAME_LIB	=		libft.a
@@ -52,4 +51,4 @@ fclean		:		clean
 
 re			:		fclean all
 
-.PHONY		:		all clen fclean re
+.PHONY		:		all clean fclean re
