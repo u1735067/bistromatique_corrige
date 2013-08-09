@@ -1,4 +1,3 @@
-
 #include			<stdlib.h>
 #include			<sys/types.h>
 #include			<sys/uio.h>
@@ -45,7 +44,7 @@ static int			ft_fill_buff(char* buf, size_t size)
 	while (ret != 0)
 	{
 		size_read = size_read + ret;
-		ret = read(0, buf, size - size_read);
+		ret = read(0, buf + size_read, size - size_read);
 		if (ret == -1)
 		{
 			write(2, SYNTAXE_ERROR_MSG, ft_strlen(SYNTAXE_ERROR_MSG));
